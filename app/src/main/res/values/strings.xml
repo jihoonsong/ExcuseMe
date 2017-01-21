@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ExcuseMe</string>
+
+    <color name="theme_color">#e83428</color>
 </resources>
