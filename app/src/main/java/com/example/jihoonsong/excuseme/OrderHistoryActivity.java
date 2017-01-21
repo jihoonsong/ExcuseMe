@@ -23,7 +23,7 @@ public class OrderHistoryActivity extends Activity {
         payActive.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if (v.getId() == R.id.button_pay_active) {
-                    startActivity(new Intent(OrderHistoryActivity.this, OrderHistoryActivity.class));
+                    startActivity(new Intent(OrderHistoryActivity.this, PayingActivity.class));
 
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                     finish();

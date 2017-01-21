@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:src="@drawable/paying"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/mesg_paying_input"
+        android:src="@drawable/paying_input"
+        android:layout_width="552px"
+        android:layout_height="66px"
+        android:layout_marginTop="420px"
+        android:layout_marginLeft="160px" />
+
+    <EditText
+        android:id="@+id/edit_paying_input"
+        android:layout_width="555px"
+        android:layout_height="66px"
+        android:layout_marginTop="440px"
+        android:layout_marginLeft="165px" />
+
+    <ImageView
+        android:id="@+id/button_pay"
+        android:layout_width="710px"
+        android:layout_height="110px"
+        android:layout_marginTop="550px"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

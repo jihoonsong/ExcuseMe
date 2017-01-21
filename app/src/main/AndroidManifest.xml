@@ -20,6 +20,8 @@
         <activity android:name=".MenuSelectActivity" android:label="MenuSelectActivity" />
         <activity android:name=".OrderListActivity" android:label="OrderListActivity" />
         <activity android:name=".OrderHistoryActivity" android:label="OrderHistoryActivity" />
+        <activity android:name=".PayingActivity" android:label="PayingActivity" />
+        <activity android:name=".MobileIspActivity" android:label="MobileIspActivity" />
 
     </application>
 
