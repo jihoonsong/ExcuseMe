@@ -11,6 +11,6 @@ public class MenuSelectActivity extends Activity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_entering);
+        setContentView(R.layout.activity_menu_select);
     }
 }

@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -13,6 +12,7 @@ public class TableSelectActivity extends Activity {
     ImageView popupTableSelect;
     ImageView buttonYes;
     ImageView buttonNo;
+    ImageView shadow;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -26,10 +26,12 @@ public class TableSelectActivity extends Activity {
         popupTableSelect = (ImageView)findViewById(R.id.popup_table_select);
         buttonYes = (ImageView)findViewById(R.id.button_yes);
         buttonNo = (ImageView)findViewById(R.id.button_no);
+        shadow = (ImageView)findViewById(R.id.shadow);
 
         button12.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if (v.getId() == R.id.button_12) {
+                    shadow.setVisibility(View.VISIBLE);
                     popupTableSelect.setVisibility(View.VISIBLE);
                     buttonYes.setClickable(true);
                     buttonNo.setClickable(true);
@@ -52,6 +54,7 @@ public class TableSelectActivity extends Activity {
         buttonNo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if (v.getId() == R.id.button_no) {
+                    shadow.setVisibility(View.INVISIBLE);
                     popupTableSelect.setVisibility(View.INVISIBLE);
                     buttonYes.setClickable(false);
                     buttonNo.setClickable(false);

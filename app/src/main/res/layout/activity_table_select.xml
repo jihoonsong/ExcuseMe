@@ -11,6 +11,15 @@
         android:scaleType="centerCrop"/>
 
     <ImageView
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="#000000"
+        android:alpha="0.55"
+        android:visibility="invisible"/>
+
+    <ImageView
         android:id="@+id/popup_table_select"
         android:src="@drawable/popup_table_select"
         android:visibility="invisible"
