@@ -18,6 +18,7 @@
         <activity android:name=".EnteringActivity" android:label="EnteringActivity" />
         <activity android:name=".TableSelectActivity" android:label="TableSelectActivity" />
         <activity android:name=".MenuSelectActivity" android:label="MenuSelectActivity" />
+        <activity android:name=".OrderListActivity" android:label="OrderListActivity" />
 
     </application>
 

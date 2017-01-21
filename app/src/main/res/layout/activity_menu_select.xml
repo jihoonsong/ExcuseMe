@@ -10,4 +10,57 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"/>
 
+    <ImageView
+        android:id="@+id/button_order_inactive"
+        android:src="@drawable/order_inactive"
+        android:layout_width="340px"
+        android:layout_height="105px"
+        android:clickable="false"
+        android:layout_marginTop="1109px"
+        android:layout_marginLeft="26px" />
+
+    <ImageView
+        android:id="@+id/button_order_one"
+        android:src="@drawable/order_one"
+        android:layout_width="340px"
+        android:layout_height="105px"
+        android:visibility="invisible"
+        android:layout_marginTop="1109px"
+        android:layout_marginLeft="26px" />
+
+    <ImageView
+        android:id="@+id/button_order_two"
+        android:src="@drawable/order_two"
+        android:layout_width="340px"
+        android:layout_height="105px"
+        android:visibility="invisible"
+        android:layout_marginTop="1109px"
+        android:layout_marginLeft="26px" />
+
+    <ImageView
+        android:src="@drawable/pay_inactive"
+        android:layout_width="340px"
+        android:layout_height="105px"
+        android:clickable="false"
+        android:layout_marginTop="1109px"
+        android:layout_marginLeft="401px" />
+
+    <ImageView
+        android:id="@+id/button_menu_first"
+        android:layout_width="768px"
+        android:layout_height="235px"
+        android:layout_marginTop="265px" />
+
+    <ImageView
+        android:id="@+id/button_menu_second"
+        android:layout_width="768px"
+        android:layout_height="230px"
+        android:layout_marginTop="500px" />
+
+    <ImageView
+        android:id="@+id/button_menu_third"
+        android:layout_width="768px"
+        android:layout_height="235px"
+        android:layout_marginTop="730px" />
+
 </RelativeLayout>
