@@ -52,15 +52,42 @@
         android:layout_marginTop="265px" />
 
     <ImageView
+        android:id="@+id/button_shadow_menu_first"
+        android:layout_width="768px"
+        android:layout_height="235px"
+        android:visibility="invisible"
+        android:background="#000000"
+        android:alpha="0.1"
+        android:layout_marginTop="265px" />
+
+    <ImageView
         android:id="@+id/button_menu_second"
         android:layout_width="768px"
         android:layout_height="230px"
         android:layout_marginTop="500px" />
 
     <ImageView
+        android:id="@+id/button_shadow_menu_second"
+        android:layout_width="768px"
+        android:layout_height="230px"
+        android:visibility="invisible"
+        android:background="#000000"
+        android:alpha="0.1"
+        android:layout_marginTop="500px" />
+
+    <ImageView
         android:id="@+id/button_menu_third"
         android:layout_width="768px"
         android:layout_height="235px"
+        android:layout_marginTop="730px" />
+
+    <ImageView
+        android:id="@+id/button_shadow_menu_third"
+        android:layout_width="768px"
+        android:layout_height="235px"
+        android:visibility="invisible"
+        android:background="#000000"
+        android:alpha="0.1"
         android:layout_marginTop="730px" />
 
 </RelativeLayout>

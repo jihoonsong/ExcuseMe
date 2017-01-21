@@ -4,8 +4,11 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 public class MenuSelectActivity extends Activity {
@@ -15,6 +18,12 @@ public class MenuSelectActivity extends Activity {
     ImageView menuFirst;
     ImageView menuSecond;
     ImageView menuThird;
+    ImageView shadowMenuFirst;
+    ImageView shadowMenuSecond;
+    ImageView shadowMenuThird;
+
+    Animation fadeIn;
+    Animation fadeOut;
 
     int orderCount = 0;
 
@@ -32,6 +41,12 @@ public class MenuSelectActivity extends Activity {
         menuFirst = (ImageView)findViewById(R.id.button_menu_first);
         menuSecond = (ImageView)findViewById(R.id.button_menu_second);
         menuThird = (ImageView)findViewById(R.id.button_menu_third);
+        shadowMenuFirst = (ImageView)findViewById(R.id.button_shadow_menu_first);
+        shadowMenuSecond = (ImageView)findViewById(R.id.button_shadow_menu_second);
+        shadowMenuThird = (ImageView)findViewById(R.id.button_shadow_menu_third);
+
+        fadeIn = AnimationUtils.loadAnimation(this,R.anim.fade_in);
+        fadeOut = AnimationUtils.loadAnimation(this,R.anim.fade_out);
 
         orderTwo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -55,6 +70,16 @@ public class MenuSelectActivity extends Activity {
                     }
 
                     updateOrderButton();
+
+                    shadowMenuFirst.setVisibility(View.VISIBLE);
+                    shadowMenuFirst.setAnimation(fadeIn);
+                    Handler mHandler = new Handler();
+                    mHandler.postDelayed(new Runnable() {
+                        public void run() {
+                            shadowMenuFirst.setAnimation(fadeOut);
+                            shadowMenuFirst.setVisibility(View.INVISIBLE);
+                        }
+                    }, 200);
                 }
             }
         });
@@ -69,6 +94,16 @@ public class MenuSelectActivity extends Activity {
                     }
 
                     updateOrderButton();
+
+                    shadowMenuSecond.setVisibility(View.VISIBLE);
+                    shadowMenuSecond.setAnimation(fadeIn);
+                    Handler mHandler = new Handler();
+                    mHandler.postDelayed(new Runnable() {
+                        public void run() {
+                            shadowMenuSecond.setAnimation(fadeOut);
+                            shadowMenuSecond.setVisibility(View.INVISIBLE);
+                        }
+                    }, 200);
                 }
             }
         });
@@ -83,6 +118,16 @@ public class MenuSelectActivity extends Activity {
                     }
 
                     updateOrderButton();
+
+                    shadowMenuThird.setVisibility(View.VISIBLE);
+                    shadowMenuThird.setAnimation(fadeIn);
+                    Handler mHandler = new Handler();
+                    mHandler.postDelayed(new Runnable() {
+                        public void run() {
+                            shadowMenuThird.setAnimation(fadeOut);
+                            shadowMenuThird.setVisibility(View.INVISIBLE);
+                        }
+                    }, 200);
                 }
             }
         });
