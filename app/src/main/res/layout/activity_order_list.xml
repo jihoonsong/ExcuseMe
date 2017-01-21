@@ -27,4 +27,34 @@
         android:layout_marginTop="1109px"
         android:layout_marginLeft="401px" />
 
+    <ImageView
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="#000000"
+        android:alpha="0.55"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/order_confirm_mesg_bg"
+        android:src="@drawable/order_confirm_mesg"
+        android:layout_width="500px"
+        android:layout_height="100px"
+        android:clickable="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/order_confirm_mesg"
+        android:text="주문이 완료되었습니다!"
+        android:textSize="10pt"
+        android:gravity="center_horizontal"
+        android:layout_width="500px"
+        android:layout_height="73px"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/order_confirm_mesg_bg" />
+
 </RelativeLayout>
