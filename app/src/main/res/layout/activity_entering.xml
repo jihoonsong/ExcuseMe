@@ -6,8 +6,21 @@
     android:background="@color/theme_color">
 
     <ImageView
-        android:src="@drawable/splash_screen"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"/>
+        android:id="@+id/popup_entering"
+        android:src="@drawable/popup_entering"
+        android:visibility="invisible"
+        android:layout_width="478px"
+        android:layout_height="395px"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/button_ok"
+        android:layout_width="185px"
+        android:layout_height="75px"
+        android:clickable="true"
+        android:layout_marginStart="17dp"
+        android:layout_alignBottom="@+id/popup_entering"
+        android:layout_alignStart="@+id/popup_entering"
+        android:layout_marginBottom="12dp" />
 </RelativeLayout>

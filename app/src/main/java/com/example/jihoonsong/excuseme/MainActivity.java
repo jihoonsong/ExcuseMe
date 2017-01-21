@@ -2,25 +2,25 @@ package com.example.jihoonsong.excuseme;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Handler;
 
-import org.androidannotations.annotations.EActivity;
-
-@EActivity
 public class MainActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        // Lock rotation.
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Wait 1000 milliseconds and check start flags.
         Handler mHandler = new Handler();
         mHandler.postDelayed(new Runnable() {
             public void run() {
                 SwapActivity();
             }
-        }, 1000);
+        }, 1300);
     }
 
     private void SwapActivity() {
